@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  margin: 20px;
+  background: linear-gradient(135deg, #ffffff, #f1f5f9);
+  color: #333;
+  line-height: 1.6;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: scale(1.01);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+h1,
+h2 {
+  color: #0056b3;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+/* Form Styling */
+form {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: 600;
+  color: #333;
+}
+
+input,
+select,
+button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #fafafa;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: none;
+  border-color: #0056b3;
+  box-shadow: 0 0 6px rgba(0, 86, 179, 0.3);
+}
+
+input:hover,
+select:hover {
+  background-color: #f4f4f4;
+}
+
+button {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: background 0.3s, transform 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #004494;
+  transform: scale(1.03);
+}
+
+button:active {
+  background-color: #003366;
+  transform: scale(0.97);
+}
+
+/* Native Display Section
+ #native-display {
+  position: fixed;
+  bottom: 15px;
+  right: 15px; 
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  padding: 10px;
+  max-width: 300px; 
+  border-radius: 10px;
+}  */
+
+/* Style for each Native Display Unit */
+/* #native-display > div {
+  margin: 10px 0;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f7f9fc;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+} */
+
+
+/* Keyframes for Fade-In Effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Additional Styling */
+input[type="submit"],
+button {
+  margin-top: 15px;
+}
+
+select {
+  background-color: #ffffff;
+}
